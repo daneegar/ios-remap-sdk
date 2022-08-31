@@ -100,12 +100,12 @@ public struct Auth {
 
 public enum MSApiRequest : String {
     static var baseUrl: URL {
-        guard let url = URL(string: "https://\(UserDefaults.standard.moySkladHost)/api/remap/1.1") else {
+        guard let url = URL(string: "https://\(UserDefaults.standard.moySkladHost)/api/remap/1.2") else {
             
-            var urlString = URL(string: "https://online.moysklad.ru/api/remap/1.1")!
+            var urlString = URL(string: "https://online.moysklad.ru/api/remap/1.2")!
             
             if UserDefaults.standard.moySkladHost == "app.mystorehq.com" {
-                urlString = URL(string: "https://app.mystorehq.com/api/remap/1.1")!
+                urlString = URL(string: "https://app.mystorehq.com/api/remap/1.2")!
             }
             return urlString
         }
